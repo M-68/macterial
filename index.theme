@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type = X-GNOME-Metatheme
+Name = Macterial
+Comment = A Mac inspired Gtk+ theme based on Material Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme = Macterial
+MetacityTheme = Macterial
+IconTheme = Flat-Remix
+CursorTheme = DMZ-White
+ButtonLayout = close,minimize,maximize:menu
