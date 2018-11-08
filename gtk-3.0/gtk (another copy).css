@@ -5761,7 +5761,7 @@ button.documents-favorite:active:hover {
 
 .tweak-categories,
 .tweak-category:not(:selected):not(:hover) {
-  background-image: linear-gradient(to bottom, #181818, #181818);
+  background-image: linear-gradient(to bottom, #242424, #242424);
 }
 
 .tweak-categories {

@@ -29,13 +29,13 @@
   outline-color: alpha(currentColor,0.3);
   outline-style: dashed;
   outline-offset: -3px;
-  outline-width: 1px;
+  outline-width: 0px;
   -gtk-outline-radius: 5px;
 }
 
 .background {
   color: #dedede;
-  background-color: rgba(44, 44, 44, 0.999);
+  background-color: #262626;
 }
 
 .background.csd, .background.ssd, .background.osd {
@@ -1432,14 +1432,14 @@ headerbar,
   padding: 0 8px;
   background-image: none;
   color: rgba(225, 219, 219, 0.8);
-  background-color: rgba(55, 55, 55, 0.98);
-  border-bottom: 1px solid #484848;
+  background-color: #090909;
+  border: none;
 }
 
 .csd headerbar, .csd .titlebar:not(headerbar) {
   background-image: none;
-  background-color: rgba(55, 55, 55, 0.98);
-  border-bottom: 1px solid #484848;
+  background-color: #141414;
+  border: none;
 }
 
 headerbar:backdrop,
@@ -1447,23 +1447,23 @@ headerbar:backdrop,
   transition: 200ms ease-out;
   color: rgba(225, 219, 219, 0.5);
   background-image: none;
-  background-color: #404040;
-  border-color: #404040;
+  background-color: #141414;
+  border: none;
 }
 
 .csd headerbar:backdrop, .csd .titlebar:backdrop:not(headerbar) {
-  background-color: #404040;
-  border-color: #404040;
+  background-color: #141414;
+  border: none;
 }
 
 .maximized headerbar, .maximized .titlebar:not(headerbar) {
-  background-color: rgba(55, 55, 55, 0.98);
-  border-bottom: 1px solid #484848;
+  background-color: #090909;
+  border: none;
 }
 
 .maximized headerbar:backdrop, .maximized .titlebar:backdrop:not(headerbar) {
-  background-color: #404040;
-  border-color: #404040;
+  background-color: #141414;
+  border: none;
 }
 
 headerbar .title,
@@ -1523,19 +1523,19 @@ headerbar.selection-mode .selection-menu .arrow,
 }
 
 .maximized headerbar, .maximized .titlebar:not(headerbar) {
-  background-color: rgba(55, 55, 55, 0.98);
-  border-color: #484848;
+  background-color: #090909;
+  border: none;
 }
 
 .maximized headerbar:backdrop, .maximized .titlebar:backdrop:not(headerbar) {
-  background-color: #404040;
+  background-color: #141414;
 }
 
 headerbar.default-decoration,
 .default-decoration.titlebar:not(headerbar) {
   min-height: 26px;
   padding: 0 6px;
-  background-color: rgba(55, 55, 55, 0.98);
+  background-color: #090909;
   background-image: none;
 }
 
@@ -1615,13 +1615,11 @@ window.csd > .titlebar:not(headerbar):backdrop {
 }
 
 .titlebar:not(headerbar) > separator {
-  background-color: rgba(55, 55, 55, 0.98);
-  background-image: none;
+  background-color: none;
 }
 
 .titlebar:not(headerbar) > separator:backdrop {
-  background-image: none;
-  background-color: #404040;
+  background-color: none;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
@@ -4086,9 +4084,7 @@ scrolledwindow junction:dir(rtl) {
 }
 
 separator {
-  background-color: rgba(0, 0, 0, 0.1);
-  min-width: 1px;
-  min-height: 1px;
+  width: 0;
 }
 
 list {
@@ -6523,9 +6519,7 @@ window.background.chromium headerbar.titlebar button.titlebutton {
 }
 
 window.background.chromium button {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.12);
+  border: none;
 }
 
 window.background.chromium entry.chromium, window.background.chromium entry.chromium:focus {
