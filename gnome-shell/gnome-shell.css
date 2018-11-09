@@ -884,7 +884,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .osd-window {
   text-align: center;
   font-weight: 400;
-  border-radius:
+  border-radius: 12px;
   spacing: 1em;
   margin: 32px;
   min-width: 64px;
