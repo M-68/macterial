@@ -455,7 +455,7 @@ treeview entry:focus {
 }
 
 button {
-    outline-color: #8eb9ff;
+    outline-color: rgba(255, 255, 255, 0.25);
     outline-style: solid;
     outline-offset: -1px;
     outline-width: 3px;
@@ -4864,24 +4864,7 @@ messagedialog.csd .dialog-action-area button:not(.suggested-action):not(.destruc
 }
 
 messagedialog.csd .dialog-action-area button {
-    border-radius: 0;
-    border-right-style: none;
-}
-
-messagedialog.csd .dialog-action-area button:last-child {
-    border-radius: 0 0 6px 0;
-    border-right-style: none;
-}
-
-messagedialog.csd .dialog-action-area button:first-child {
-    border-radius: 0 0 0 6px;
-    border-left-style: none;
-}
-
-messagedialog.csd .dialog-action-area button:only-child {
-    border-radius: 0 0 6px 6px;
-    border-left-style: none;
-    border-right-style: none;
+    border-radius: 4px;
 }
 
 filechooser #pathbarbox {
