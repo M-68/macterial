@@ -455,10 +455,10 @@ treeview entry:focus {
 }
 
 button {
-    outline-color: #8BB6FF;
+    outline-color: rgba(255, 255, 255, 0.25);
     outline-style: solid;
     outline-offset: -1px;
-    outline-width: 3px;
+    outline-width: 2px;
     -gtk-outline-radius: 6px;
 }
 
