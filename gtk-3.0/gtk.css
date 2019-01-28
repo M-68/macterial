@@ -1936,11 +1936,11 @@ window.csd>.titlebar:not(headerbar):backdrop {
 }
 
 .titlebar:not(headerbar)>separator {
-    background-color: none;
+    background-color: transparent;
 }
 
 .titlebar:not(headerbar)>separator:backdrop {
-    background-color: none;
+    background-color: transparent;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) separator,
@@ -4666,10 +4666,6 @@ scrolledwindow junction {
 
 scrolledwindow junction:dir(rtl) {
     border-image-slice: 0 1 0 0;
-}
-
-separator {
-    width: 0;
 }
 
 list {
@@ -7833,15 +7829,15 @@ menubar .panel,
 .composited-indicator>revealer spinner {
     color: #fff;
     font-weight: bold;
-    text-shadow: 0 0 2px alpha #000, 0.3, 0 1px 2px alpha #000, 0.6;
+    text-shadow: 0 0 2px alpha(#000, 0.3), 0 1px 2px alpha(#000, 0.6);
     transition: all 200ms ease-in-out;
-    -gtk-icon-shadow: 0 0 2px alpha #000, 0.3, 0 1px 2px alpha #000, 0.6;
+    -gtk-icon-shadow: 0 0 2px alpha(#000, 0.3), 0 1px 2px alpha(#000, 0.6);
 }
 
 .composited-indicator .keyboard {
     background-color: #fff;
     border-radius: 2px;
-    box-shadow: 0 0 2px alpha #000, 0.3, 0 1px 2px alpha #000, 0.6;
+    box-shadow: 0 0 2px alpha(#000, 0.3), 0 1px 2px alpha(#000, 0.6);
     color: #333;
     font-weight: 600;
     padding: 0 3px;
