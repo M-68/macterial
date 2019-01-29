@@ -1623,7 +1623,7 @@ toolbar.osd,
     border-radius: 5px;
     background-color: rgba(36, 36, 36, 0.85);
 }
-
+/*  */
 toolbar.osd.left,
 .osd.left.inline-toolbar,
 toolbar.osd.right,
@@ -1738,7 +1738,7 @@ headerbar,
     background-color: #141414;
     border: none;
 }
-
+/*  */
 headerbar:backdrop,
 .titlebar:backdrop:not(headerbar) {
     transition: 200ms ease-out;
@@ -4487,7 +4487,7 @@ progressbar trough {
     min-width: 4px;
     border: none;
     border-radius: 5px;
-    background-color: #262626;
+    background-color: #1A1A1A;
 }
 
 row:selected progressbar trough,
@@ -4509,7 +4509,7 @@ levelbar trough {
     border: none;
     padding: 3px;
     border-radius: 5px;
-    background-color: #262626;
+    background-color: #1A1A1A;
 }
 
 levelbar.horizontal.discrete block {
@@ -4720,7 +4720,7 @@ row.activatable:selected:hover,
     margin: 0 8px 8px 8px;
     color: #dedede;
     background-color: #333333;
-    background-image: linear-gradient(0deg, #333333 0%, #333333 85%, #262626 95%, #0d0d0d 100%);
+    background-image: linear-gradient(0deg, #333333 0%, #333333 85%, #1A1A1A 95%, #0d0d0d 100%);
     border-radius: 0;
     border: none;
     box-shadow: 0px 1px 2px 0px rgba(16, 16, 16, 0.15), 0px 2px 3px 0px rgba(16, 16, 16, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.12);
