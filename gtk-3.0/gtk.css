@@ -439,7 +439,6 @@ treeview entry:focus {
     box-shadow: none;
     border: none;
     background-color: transparent;
-    background: 
 }
 
 .entry-tag.button:not(:hover):not(:active) {
@@ -4736,7 +4735,6 @@ row.activatable:selected:hover,
     margin: 0 0 0 0;
     min-height: 24px;
     min-width: 24px;
-    color: 
     border-radius: 100px;
     -gtk-outline-radius: 100px;
 }
@@ -7174,7 +7172,6 @@ flowboxchild.bookmark-tag-widget label {
 
 flowboxchild.bookmark-tag-widget-selected {
     color: #FFFFFF;
-    background: 
 }
 
 MsdOsdWindow.background.osd {
@@ -8152,6 +8149,8 @@ GraniteWidgetsPopOver {
     -GraniteWidgetsPopOver-border-radius: 2px;
     -GraniteWidgetsPopOver-border-width: 1;
     -GraniteWidgetsPopOver-shadow-size: 12;
+    border-radius: 2px;
+    border-width: 1;
     border: 1px solid rgba(0, 0, 0, 0.3);
     margin: 0;
 }
@@ -8776,41 +8775,7 @@ filechooser placessidebar.sidebar scrollbar trough,
     background-color: transparent;
 }
 
-@define-color theme_fg_color #AFAFAF;
-@define-color theme_text_color #AFAFAF;
-@define-color theme_bg_color #262626;
-@define-color theme_base_color #242424;
-@define-color theme_selected_bg_color #166DFF;
-@define-color theme_selected_fg_color #FFFFFF;
-@define-color fg_color #AFAFAF;
-@define-color text_color #AFAFAF;
-@define-color bg_color #262626;
-@define-color base_color #242424;
-@define-color selected_bg_color #166DFF;
-@define-color selected_fg_color #FFFFFF;
-@define-color insensitive_bg_color #262626;
-@define-color insensitive_fg_color alpha(#AFAFAF,
-0.5);
-@define-color insensitive_base_color #242424;
-@define-color theme_unfocused_fg_color #AFAFAF;
-@define-color theme_unfocused_text_color #AFAFAF;
-@define-color theme_unfocused_bg_color #262626;
-@define-color theme_unfocused_base_color #242424;
-@define-color borders rgba(255,
-255,
-255,
-0.12);
-@define-color unfocused_borders rgba(255,
-255,
-255,
-0.12);
-@define-color warning_color #F27835;
-@define-color error_color #FC4138;
-@define-color success_color #71c837;
-@define-color placeholder_text_color #A8A8A8;
-@define-color link_color #105AFF;
-@define-color content_view_bg #242424;
-/******************
+/*******************
  * Budgie Desktop *
  ******************/
 
@@ -8844,7 +8809,7 @@ window.budgie-switcher-window .drop-shadow button {
 .budgie-settings-window buttonbox.inline-toolbar button:checked,
 .budgie-popover:not(.budgie-menu) button.flat:checked:not(.image-button),
 .budgie-popover:not(.budgie-menu) button.budgie-menu-launcher:checked:not(.image-button),
-.budgie-popover:not(.budgie-menu) .bu@define-colordgie-panel #tasklist-button:checked:not(.image-button),
+.budgie-popover:not(.budgie-menu) .budgie-panel #tasklist-button:checked:not(.image-button),
 .budgie-panel .budgie-popover:not(.budgie-menu) #tasklist-button:checked:not(.image-button),
 .workspace-switcher .workspace-add-button:checked,
 .raven-mpris button.image-button:checked,
