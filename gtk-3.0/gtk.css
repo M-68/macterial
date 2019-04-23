@@ -8553,7 +8553,7 @@ filechooser.maximized placessidebar,
 
 filechooser.maximized placessidebar.sidebar,
 .nautilus-window.maximized placessidebar.sidebar {
-    background-color: #FF3b3b;
+    background-color: #3b3b3b;
 }
 
 .nemo-window .sidebar {
@@ -8597,7 +8597,7 @@ filechooser.maximized placessidebar.sidebar,
 .caja-side-pane treeview {
     color: #AFAFAF;
     caret-color: #AFAFAF;
-    background-color: #FF3B3B;
+    background-color: #3b3b3b;
 }
 
 .caja-side-pane>box button:not(:active):not(:checked) {
@@ -8640,7 +8640,7 @@ filechooser actionbar combobox {
 }
 
 .maximized .gedit-document-panel {
-    background-color: #FF3B3B;
+    background-color: #3b3b3b;
 }
 
 .gedit-document-panel row {
