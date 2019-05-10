@@ -1,12 +1,12 @@
 [Desktop Entry]
-Type = X-GNOME-Metatheme
-Name = Macterial
-Comment = A Mac inspired Gtk+ theme based on Material Design
+Type=X-GNOME-Metatheme
+Name=Matcha-dark-aliz
+Comment=A dark modern design theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme = Macterial
-MetacityTheme = Macterial
-IconTheme = Flat-Remix
-CursorTheme = DMZ-White
-ButtonLayout = close,minimize,maximize:menu
+GtkTheme=Matcha-dark-aliz
+MetacityTheme=Matcha-dark-aliz
+IconTheme=Matcha
+CursorTheme=Breeze_cursors
+ButtonLayout=menu:minimize,maximize,close

@@ -15,9 +15,9 @@ style "default" {
   GtkWidget::tooltip-alpha = 235
   GtkWidget::new-tooltip-style = 1 #for compatibility
 
-  GtkSeparatorMenuItem::horizontal-padding = 0
-  GtkSeparatorMenuItem::wide-separators = 1
-  GtkSeparatorMenuItem::separator-height = 2
+  GtkSeparatorMenuItem::horizontal-padding = 3
+  GtkSeparatorMenuItem::wide-separators = 0
+  GtkSeparatorMenuItem::separator-height = 1
 
   GtkButton::child-displacement-y = 0
   GtkButton::default-border = { 0, 0, 0, 0 }
@@ -37,8 +37,8 @@ style "default" {
   GtkScrolledWindow::scrollbar-spacing = 0
   GtkScrolledWindow::scrollbars-within-bevel = 1
 
-  GtkScale::slider_length = 20
-  GtkScale::slider_width = 20
+  GtkScale::slider_length = 15
+  GtkScale::slider_width = 15
   GtkScale::trough-side-details = 1
 
   GtkProgressBar::min-horizontal-bar-height = 8
@@ -60,7 +60,8 @@ style "default" {
   GtkTreeView::vertical-separator = 4
   GtkTreeView::horizontal-separator = 4
   GtkTreeView::allow-rules = 1
-  GtkTreeView::odd_row_color = shade(0.98, @base_color)
+  GtkTreeView::odd-row-color = mix(0.5, @bg_color, @base_color)
+  GtkTreeView::even-row-color = @base_color
 
   GtkExpander::expander-size = 11
 
@@ -98,8 +99,6 @@ style "default" {
   base[ACTIVE] = shade (0.9, @selected_bg_color)
 
   # For succinctness, all reasonable pixmap options remain here
-  # This needs to go before pixmap because we need to override some stuff
-  engine "adwaita" {}
 
   engine "pixmap" {
 
@@ -449,15 +448,15 @@ style "default" {
 
     image {
       function = VLINE
-      file = "assets/border.png"
-      border = { 1, 0, 0, 0 }
+      file = "assets/line-v.png"
+      border = { 0, 0, 0, 0 }
       stretch = TRUE
     }
 
     image {
       function = HLINE
-      file = "assets/border.png"
-      border = { 0, 0, 1, 0 }
+      file = "assets/line-h.png"
+      border = { 0, 0, 0, 0 }
       stretch = TRUE
     }
 
@@ -689,12 +688,37 @@ style "menu" {
   bg[NORMAL] = @menu_bg
   bg[INSENSITIVE] = @menu_bg
   bg[PRELIGHT] = @menu_bg
+
+  engine "pixmap" { # For menus that use horizontal lines rather than gtkseparator
+
+    image {
+      function = HLINE
+      file = "assets/null.png"
+      border = { 0, 0, 0, 0 }
+      stretch = TRUE
+    }
+  }
 }
 
-style "menu_item"
-{
-  xthickness = 4
-  ythickness = 2
+style "menu_framed_box" {
+
+#  engine "adwaita" { # default menu border
+#  }
+
+  engine "pixmap" {
+    image {
+      function = BOX
+      file     = "assets/frame.png"
+      border   = { 1, 1, 2, 1 }
+      stretch  = TRUE
+    }
+  }
+
+}
+
+style "menu_item" {
+  xthickness = 2
+  ythickness = 3
 
   # HACK: Gtk doesn't actually read this value
   # while rendering the menu items, but Libreoffice
@@ -704,7 +728,9 @@ style "menu_item"
   # highlight. The price to pay is black text on menus as well,
   # but at least it's readable.
   # See https://bugs.freedesktop.org/show_bug.cgi?id=38038
-  bg[SELECTED] = @selected_fg_color
+
+  bg[NORMAL] = @menu_bg
+  bg[SELECTED] = @selected_bg_color
 
   fg[NORMAL] = @menu_fg
   fg[SELECTED] = @selected_fg_color
@@ -910,43 +936,13 @@ style "menu_item"
       overlay_stretch = FALSE
       arrow_direction = RIGHT
     }
-
-    image {
-      function = BOX
-      state    = PRELIGHT
-      detail   = "menu_scroll_arrow_up"
-      file     = "assets/border.png"
-      border   = {0, 0, 1, 0}
-    }
-
-    image {
-      function = BOX
-      detail   = "menu_scroll_arrow_up"
-      file     = "assets/border.png"
-      border   = {0, 0, 1, 0}
-    }
-
-    image {
-      function = BOX
-      state    = PRELIGHT
-      detail   = "menu_scroll_arrow_down"
-      file     = "assets/border.png"
-      border   = {1, 0, 0, 0}
-    }
-
-    image {
-      function = BOX
-      detail   = "menu_scroll_arrow_down"
-      file     = "assets/border.png"
-      border   = {1, 0, 0, 0}
-    }
   }
 }
 
 style "button" {
 
-  xthickness = 4
-  ythickness = 4
+  xthickness = 2
+  ythickness = 2
 
   engine "pixmap" {
 
@@ -961,9 +957,20 @@ style "button" {
     image {
       function = BOX
       state = PRELIGHT
+      shadow = OUT
       file = "assets/button-hover.png"
       border = { 4, 4, 4, 4 }
       stretch = TRUE
+    }
+
+    # Don't add hover effect on pressed buttons
+    image {
+      function = BOX
+      state    = PRELIGHT
+      shadow   = IN
+      file     = "assets/button-active.png"
+      border   = {4, 4, 4, 4}
+      stretch  = TRUE
     }
 
     image {
@@ -1965,14 +1972,14 @@ style "progressbar" {
 }
 
 style "separator_menu_item" {
-  xthickness = 0
-  ythickness = 2
 
   engine "pixmap" {
+
     image {
       function = BOX
-      file     = "assets/menu-separator.png"
-      border   = {0, 0, 2, 0}
+      file = "assets/null.png"
+      border = { 0, 0, 1, 0 }
+      stretch = TRUE
     }
   }
 }
@@ -1980,8 +1987,11 @@ style "separator_menu_item" {
 style "treeview_header" {
   ythickness = 1
 
-  fg[PRELIGHT] = mix(0.70, @text_color, @base_color)
-  font_name = "Bold"
+  fg[NORMAL] = mix(0.6, @text_color, @base_color)
+  fg[PRELIGHT] = mix(0.8, @text_color, @base_color)
+  fg[ACTIVE]  = @text_color
+  fg[INSENSITIVE] = mix(0.24, @text_color, @base_color)
+  font_name = "Medium"
 
   engine "pixmap" {
 
@@ -2001,8 +2011,9 @@ style "treeview" {
   xthickness = 2
   ythickness = 0
 
-
-}    
+  bg[NORMAL] = @bg_color
+  bg[SELECTED] = mix(0.8, @selected_bg_color, @fg_color) # progress
+}
 
 style "scrolled_window" {
 
@@ -2144,33 +2155,16 @@ style "toolbar" {
       orientation = VERTICAL
     }
 
-    #########
-    # Lines #
-    #########
-
     image {
       function = VLINE
-      file     = "assets/border.png"
-      border   = {1, 0, 0, 0}
+      recolorable = TRUE
+      file = "assets/null.png"
     }
 
     image {
       function = HLINE
-      file     = "assets/border.png"
-      border   = {0, 0, 1, 0}
-    }
-  }
-}
-
-style "toolbar_separator" {
-  GtkWidget::wide-separators  = 1
-  GtkWidget::separator-width  = 1
-  GtkWidget::separator-height = 1
-
-  engine "pixmap" {
-    image {
-      function = BOX
-      file     = "assets/border.png"
+      recolorable = TRUE
+      file = "assets/null.png"
     }
   }
 }
@@ -2270,6 +2264,45 @@ style "xfwm-tabwin-button" {
   bg[SELECTED] = @selected_bg_color
 }
 
+# Thunar
+
+style "thunar_location_button" = "location_button" {
+  ThunarLocationButtons::spacing = 0
+
+  engine "pixmap" {
+    image {
+      function = BOX
+      state    = NORMAL
+      file     = "assets/null.png"
+      border   = { 2, 2, 2, 2 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = PRELIGHT
+      file     = "assets/pathbar_button_prelight.png"
+      border   = { 2, 2, 2, 2 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = ACTIVE
+      file     = "assets/pathbar_button_active.png"
+      border   = { 0, 0, 0, 2 }
+      stretch  = TRUE
+    }
+    image {
+      function = BOX
+      state    = INSENSITIVE
+      file     = "assets/null.png"
+      border   = { 2, 2, 2, 2 }
+      stretch  = TRUE
+    }
+  }
+}
+
+widget_class "*ThunarLocationButtons*" style "thunar_location_button"
+
 # Chromium
 style "chrome_menu_item" {
 
@@ -2309,15 +2342,16 @@ class "GtkSpinButton"                                               style "spinb
 class "GtkNotebook"                                                 style "notebook"
 class "GtkRange"                                                    style "range"
 class "GtkProgressBar"                                              style "progressbar"
+class "GtkSeparatorMenuItem"                                        style "separator_menu_item"
 class "GtkScrolledWindow"                                           style "scrolled_window"
 class "GtkFrame"                                                    style "frame"
 class "GtkTreeView"                                                 style "treeview"
 class "GtkToolbar"                                                  style "toolbar"
 class "*HandleBox"                                                  style "toolbar"
-class "GtkMenu"                                                     style "menu"
 
+widget_class "*<GtkMenu>*"                                          style "menu"
+widget_class "*<GtkMenu>*"                                          style "menu_framed_box"
 widget_class "*<GtkMenuItem>*"                                      style "menu_item"
-widget_class "*<GtkSeparatorMenuItem>*"                             style "separator_menu_item"
 widget_class "*<GtkCheckButton>*"                                   style "checkbutton"
 widget_class "*<GtkComboBox>"                                       style "combobox"
 widget_class "*<GtkComboBox>*<GtkButton>"                           style "combobox_button"

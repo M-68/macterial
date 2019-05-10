@@ -1,24 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="24px" viewBox="0 0 40 24" enable-background="new 0 0 40 24" xml:space="preserve">  <image id="image0" width="40" height="24" x="0" y="0"
-    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAYCAMAAAC/Wk/yAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABoVBMVEUAAABzxTpxyTZxyTZx
-yDdxyDdwyTZxyDdvzDNxxzhxyDdwyDdtyDdyyTZxyDdxyDdwyTZyxzhxyDdwyDdwxzhxyDdyxjkA
-/wBxyDdvyTZzyDdxxzhxyDdxyDdxyDdxyDdxyDdxyDdwxzhyyDdxyDdxyDdxyDdxyTZvxjZwyjVu
-wzZwxTdyyDdswDVwxTZxyDdouDNrvzVtvzdxyDdxyDdxyDdjsDFlszFntjNouDNkuS4AAAAAAAAA
-AABxyDdxxzd2yD+P0WOc1nSS02eBzU5wxjaIzVvQ6b/6/fn////j89ik239yxzlvwzaz25f+/v3b
-8Mx8y0dtwTW526Lm9d15ykJuwzWVyXLM6rhquTTm8N/+//6O0mCHvWLC5appuzOszpXo9N9vxTZm
-tDK+1635/PdvxDZksDG91qz4+/WqypTn899+sFy+36dquzRanS3k7t6IyV1fqC6ItGvG4LRouDJZ
-nSuvzJzi7tpwvDxYmiumxZDU5chwtkBypk/H27r5+/fd6dSUwHZlsTNYnCtcmzJ5rFeJtmt+sF1q
-pkFmtTLr8qvRAAAAPnRSTlMAH3G33fTcth6g+58cTO3sS079VDL3MQHGR0Wc19Ty8fDV052aRsLF
-9zD8VErsS/r6nxxvtdv13rpzIQEEBaPx9WoAAAABYktHREmHBeR8AAAACXBIWXMAAA7EAAAOxAGV
-Kw4bAAAAB3RJTUUH4gcSAg4scLfGLgAAAUNJREFUKM9jYCARMDIxs7DaoQFWNnYmRhRlHJxc6Irs
-7B0cnZxd7Li4eRDqePkwVLm6uXt4AoGXtw+/AEydIIZx9r5+/p5QEBAoJAxRJyKKoS4o2BMBQkJF
-xUDqxCUw1IWFeyKDCHsJcaBCSQxvuEZGoSiMjrGTAirkxlAYFOuJCuLspIEKZTBsjk9AU5hoLwtU
-KIeuMCk5BU1hapIcUKE8usK09Aw0hZlpCkCFipgKs9AUZqcpARUqY1qdg6YwN0kFqFAVwzN5+QWo
-wVNoDwoecTWM4CkqRlFYEqQOCnAGMfQodC0tK0dSV1GpoYk9UdiHpVdVwxNFTa2WNiz56PCjJ4r0
-srr6BpDzGpuadfUQCZJHWR/NzNKilta29o7OIgNDI9Q0bmxiipQV7F2D8rrSzcwtLK2sCeUiaxtb
-WxuCqigAACM3tgYTHn6MAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA3LTE4VDAyOjE0OjQ0LTA3
-OjAw7gOdNAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNy0xOFQwMjoxNDo0NC0wNzowMJ9eJYgA
-AAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC" />
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="20"
+   viewBox="0 0 40 20"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="toggle-on.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="12.241786"
+     inkscape:cx="17.852921"
+     inkscape:cy="4.4192072"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     width="40px"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4136" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1032.3622)">
+    <rect
+       style="stroke:none;fill:#2eb398;fill-opacity:1"
+       id="rect4140"
+       width="36"
+       height="16"
+       x="2"
+       y="1034.3622"
+       rx="8"
+       ry="8" />
+    <circle
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       id="path4142"
+       cx="30"
+       cy="1042.3622"
+       r="6" />
+  </g>
 </svg>

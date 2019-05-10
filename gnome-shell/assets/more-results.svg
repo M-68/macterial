@@ -14,8 +14,8 @@
    viewBox="0 0 16 16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="more-results.svg">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="more-results-aliz.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,17 +25,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="12.78125"
-     inkscape:cx="10.562633"
-     inkscape:cy="3.7903354"
+     inkscape:zoom="9.0377086"
+     inkscape:cx="7.3339384"
+     inkscape:cy="1.7634227"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="691"
+     inkscape:window-height="713"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -59,7 +59,7 @@
      id="layer1"
      transform="translate(0,-1036.3622)">
     <circle
-       style="fill:#0e6bff;fill-opacity:1;stroke:none"
+       style="fill:#f0544c;fill-opacity:1;stroke:none"
        id="path4138"
        cx="8"
        cy="1044.3622"
