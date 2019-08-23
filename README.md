@@ -1,4 +1,10 @@
-# macterial
+```
+                         __            _       __
+   ____ ___  ____ ______/ /____  _____(_)___ _/ /
+  / __ `__ \/ __ `/ ___/ __/ _ \/ ___/ / __ `/ / 
+ / / / / / / /_/ / /__/ /_/  __/ /  / / /_/ / /  
+/_/ /_/ /_/\__,_/\___/\__/\___/_/  /_/\__,_/_/   
+```
 ![MACTERIAL](https://cn.opendesktop.org/cache/85x85-crop/img/5/0/f/6/842afc8485cce7dea1a543cdb66c9e85c4b4.jpg)A mac inspired Gtk+ theme based on Material design
 
 Visit to download!
