@@ -16,6 +16,8 @@
     }
 }
 
+@define-color content_view_bg #242424;
+
 * {
     background-clip: padding-box;
     -GtkToolButton-icon-spacing: 4;
