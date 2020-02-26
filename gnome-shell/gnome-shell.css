@@ -1752,7 +1752,7 @@ StScrollBar StButton#hhandle:active {
     width: 32px;
 }
 
-.window-close:hover { 
+.window-close:hover {
     background-image: url("assets/window-close.svg");
 }
 
