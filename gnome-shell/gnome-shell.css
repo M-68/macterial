@@ -1742,16 +1742,17 @@ StScrollBar StButton#hhandle:active {
 
 .window-close {
     transition-duration: 0ms;
+    background-image: url("assets/window-close.svg");
+    background-color: transparent;
+    background-size: 32px;
+    border: none;
+    box-shadow: none;
+    color: transparent;
     height: 32px;
     width: 32px;
-    -shell-close-overlap: 16px;
-    -st-background-image-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
-    background-image: url("assets/window-close.svg");
-    background-size: 32px;
 }
 
 .window-close:hover {
-    -st-background-image-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
     background-image: url("assets/window-close.svg");
 }
 
@@ -1763,9 +1764,7 @@ StScrollBar StButton#hhandle:active {
     -st-background-image-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.24);
 }
 
-.window-close:rtl:hover {
-    -st-background-image-shadow: 0 3px 3px rgba(0, 0, 0, 0.24), 0 3px 3px rgba(0, 0, 0, 0.345);
-}
+
 
 /* NETWORK DIALOGS */
 
