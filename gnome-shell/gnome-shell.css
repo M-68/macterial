@@ -754,7 +754,7 @@ StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-menu-item:ltr {
-    padding: 0.4em 24px 0.4em 0;
+    margin: 0.1em 0 0.1em 0;
 }
 
 .popup-menu .popup-menu-item:rtl {
