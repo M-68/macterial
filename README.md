@@ -5,12 +5,14 @@
  / / / / / / /_/ / /__/ /_/  __/ /  / / /_/ / /  
 /_/ /_/ /_/\__,_/\___/\__/\___/_/  /_/\__,_/_/   
 ```
-[![GitHub stars](https://img.shields.io/github/stars/UROP-X/macterial)](https://github.com/UROP-X/macterial/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/UROP-X/macterial)](https://github.com/UROP-X/macterial/network)
-[![GitHub issues](https://img.shields.io/github/issues/UROP-X/macterial)](https://github.com/UROP-X/macterial/issues)
 
 ![MACTERIAL](https://cn.opendesktop.org/cache/85x85-crop/img/5/0/f/6/842afc8485cce7dea1a543cdb66c9e85c4b4.jpg)
 
+
+
+[![GitHub stars](https://img.shields.io/github/stars/UROP-X/macterial)](https://github.com/UROP-X/macterial/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/UROP-X/macterial)](https://github.com/UROP-X/macterial/network)
+[![GitHub issues](https://img.shields.io/github/issues/UROP-X/macterial)](https://github.com/UROP-X/macterial/issues)
 
 
 A mac inspired Gtk+ theme based on Material design
